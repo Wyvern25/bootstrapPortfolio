@@ -144,7 +144,7 @@ h3, h2 {
   margin-right: 20px;
 }
 
- .work h3 {
+/* .work h3 {
   position: absolute;
   bottom: 20px;
   margin-right: 80px;
@@ -156,7 +156,7 @@ h3, h2 {
   text-align: center;
   background: #4aaaa5;
   border-bottom: 0;
-} 
+} */
 
  .auth-image {
   float: left;
