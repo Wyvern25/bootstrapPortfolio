@@ -3,19 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio | Your Name</title>
+  <title>Portfolio | David Goldsand</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 
   <header id="masthead">
     <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
+      <a href="index.html" id="logo">David Goldsand</a>
       <nav>
         <a href="index.html">About</a>
         <a href="portfolio.html">Portfolio</a>
@@ -27,45 +28,102 @@
   <div id="main-container" class="container">
     <section class="main-section">
       <h1>Portfolio</h1>
-      
-      <div class = "row">
-        <div class ="col-sm-4">        
-          <div class="work">        
-            <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
-            <h3>Word Guess</h3>        
-          </div>        
-        </div> 
-        
-        <div class="col-sm-4">         
-          <div class="work">        
-            <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-            <h3>RPG Game</h3>        
-          </div>        
-        </div>  
-        
+
+      <div class="row">
         <div class="col-sm-4">
           <div class="work">
-              <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
-              <h3>Trivia Game</h3>
-            </div>
-        </div>
-        
-        <div class="col-sm-4">
-            <div class="work">
-              <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">              
-              <h3>Rutgers Info Widget</h3>
-            </div>
-        </div>
-        
-        <div class="col-sm-4">
-          <div class="work">
-            <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-            <h3>Rock Paper Scissors</h3>
+            <img src="assets/images/guessingGame/guessingGame.png" alt="Word Guess" class="thumbnail"
+              id='https://wyvern25.github.io/Word-Games/wordGame/wordGame.html'>
+            <h3>Word Guess</h3>
+            <!-- needs reactive coding, hangman w/ css   -->
           </div>
         </div>
 
+        <div class="col-sm-4">
+          <div class="work">
+            <img src="assets/images/cardBattler/cardBattler.png" alt="RPG Game" class="thumbnail"
+              id='https://wyvern25.github.io/Card-Battler/fightPage.html'>
+            <h3>RPG Game</h3>
+            <!-- needs fixed login, damage bars, api replacement, repoint to login when fixed-->
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="work">
+            <img src="assets/images/gemGame/gemGame.png" alt="Gem Game" class="thumbnail"
+              id='https://wyvern25.github.io/unit-4-game/'>
+            <!-- needs responsive, center reformating and retitle -->
+            <h3>Gem Game</h3>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="work">
+            <img src="assets/images/triviaGame/triviaGame.png" alt="Simple Trivia Game" class="thumbnail"
+              id='https://wyvern25.github.io/triviaGame/'>
+            <!-- very simple, slight formating -->
+            <h3>Simple Trivia Game</h3>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="work">
+            <img src="assets/images/gifyApp/gifyApp.png" alt="Gify App" class="thumbnail"
+              id='https://wyvern25.github.io/gifyApp/'>
+            <h3>Gify App</h3>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="work">
+            <img src="assets/images/gifyApp/gifyApp.png" alt="Liri Node App" class="thumbnail"
+              id='https://github.com/Wyvern25/liri-node-app'>
+            <!-- needs an actual pic -->
+            <h3>Liri Node App</h3>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="work">
+            <img src="assets/images/gifyApp/gifyApp.png" alt="Education Board" class="thumbnail"
+              id='https://github.com/Wyvern25/educationBoard'>
+            <!-- needs a deployment and pic -->
+            <h3>Education Board</h3>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="work">
+            <img src="assets/images/gifyApp/gifyApp.png" alt="Sql Storefront" class="thumbnail"
+              id='https://github.com/Wyvern25/sqlStorefront'>
+            <!-- needs a deployment and pic -->
+            <h3>Sql Storefront</h3>
+          </div>
+        </div>
+        <!-- Not finished, needs deployment and pics
+        <div class="col-sm-4">
+          <div class="work">
+            <img src="assets/images/gifyApp/gifyApp.png" alt="Compatability Api" class="thumbnail"
+              id='https://github.com/Wyvern25/compatabilityApi'>
+            <h3>Compatbility Api</h3>
+          </div>
+        </div> 
+      -->
+
+
+        <div class="col-sm-4">
+          <div class="work">
+            <img src="assets/images/memoryGame/f.jpg" alt="Memory Game" class="thumbnail"
+              id='https://github.com/Wyvern25/MemoryGameReact'>
+            <!-- needs a deployment and pic -->
+            <h3>Memory Game</h3>
+          </div>
+        </div>
+
+
+
       </div>
-        
+
     </section>
 
   </div>
@@ -75,6 +133,13 @@
       Copyright &copy;
     </div>
   </footer>
+  <script>
+    $(document).ready(function () {
+      $('img.thumbnail').click(function () {
+        window.open(this.id)
+      });
+    });
+  </script>
 </body>
 
 </html>
